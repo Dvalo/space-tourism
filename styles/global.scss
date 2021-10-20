@@ -1,0 +1,47 @@
+h1, .h1 {
+    font-family: $font-bellefair;
+    font-size: 80px;
+
+    @include media-breakpoint-up($tablet-break-up) {
+        font-size: 150px;
+    }
+}
+
+h2, .h2 {
+    font-family: $font-bellefair;
+    font-size: 56px;
+
+    @include media-breakpoint-up($tablet-break-up) {
+        font-size: 80px;
+    }
+
+    @include media-breakpoint-up($desktop-break-up-lg) {
+        font-size: 100px;
+    }
+}
+
+h3, .h3 {
+    font-family: $font-bellefair;
+    font-size: 24px;
+
+    @include media-breakpoint-up($tablet-break-up) {
+        font-size: 40px;
+    }
+
+    @include media-breakpoint-up($desktop-break-up-lg) {
+        font-size: 56px;
+    }
+}
+
+h4, .h4 {
+    font-family: $font-bellefair;
+    font-size: 16px;
+
+    @include media-breakpoint-up($tablet-break-up) {
+        font-size: 24px;
+    }
+
+    @include media-breakpoint-up($desktop-break-up-lg) {
+        font-size: 32px;
+    }
+}

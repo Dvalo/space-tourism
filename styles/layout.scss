@@ -1,0 +1,48 @@
+.sp-header {
+    position: absolute;
+    width: 100%;
+    height: 96px;
+    top: 40px;
+    padding-left: 50px;
+
+    .sp-header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+}
+.sp-nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+
+    background: rgba(255,255,255,0.04);
+    backdrop-filter: blur(20px);
+    
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding-left: 120px;
+        margin: 0;
+    }
+    li {
+        &:not(:last-child) {
+            margin-right: 48px;
+        }
+    }
+    a {
+        color: $body-text-light;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+
+        span {
+            font-weight: bold;
+            margin-right: 9px;
+        }
+    }
+}

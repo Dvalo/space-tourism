@@ -1,6 +1,10 @@
-import Head from "next/head";
-import Image from "next/image";
+import Header from "../layout/Header";
 
 export default function Home() {
-  return <div></div>;
+  return (
+    <main className="sp-main">
+      <section className="sp-homepage">
+      </section>
+    </main>
+  );
 }

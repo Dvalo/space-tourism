@@ -1,0 +1,26 @@
+/* Bellefair (Regular) */
+@font-face {
+    font-family: "Bellefair";
+    src: url("/fonts/Bellefair/Bellefair-Regular.woff2") format("woff2"),
+        url("/fonts/Bellefair/Bellefair-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Barlow Condensed (Regular) */
+@font-face {
+    font-family: "Barlow Condensed";
+    src: url("/fonts/BarlowCondensed/BarlowCondensed-Regular.woff2") format("woff2"),
+        url("/fonts/BarlowCondensed/BarlowCondensed-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Barlow Condensed (Bold) */
+@font-face {
+    font-family: "Barlow Condensed";
+    src: url("/fonts/BarlowCondensed/BarlowCondensed-Bold.woff2") format("woff2"),
+        url("/fonts/BarlowCondensed/BarlowCondensed-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}

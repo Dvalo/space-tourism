@@ -1,0 +1,17 @@
+@import "base";
+
+$body-color: $body-text;
+$body-bg: $bg-body;
+
+$font-family-base: $font-barlow;
+
+// breakpoints
+$tablet-break-up: md;
+$desktop-break-up: lg;
+$desktop-break-up-lg: xxl;
+
+// global
+$enable-reduced-motion:       false !default;
+$enable-smooth-scroll:        false !default;
+
+@import "~bootstrap/scss/bootstrap";
