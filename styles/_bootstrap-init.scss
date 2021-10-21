@@ -10,6 +10,14 @@ $tablet-break-up: md;
 $desktop-break-up: lg;
 $desktop-break-up-lg: xxl;
 
+// Containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px, 
+);
+
 // global
 $enable-reduced-motion:       false !default;
 $enable-smooth-scroll:        false !default;

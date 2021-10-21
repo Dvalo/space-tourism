@@ -1,8 +1,24 @@
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { navItems } from "../utils/utils";
+
 export default function Nav() {
+  const router = useRouter();
+
   return (
     <nav className="sp-nav">
       <ul>
-        <li>
+        {navItems.map((item) => (
+          <li key={item.name}>
+            <Link href={item.link}>
+              <a className={router.pathname == item.link ? "sp-active" : ""}>
+                <span>{item.number}</span>
+                {item.name}
+              </a>
+            </Link>
+          </li>
+        ))}
+        {/* <li>
           <a href="#">
             <span>00</span>Home
           </a>
@@ -21,7 +37,7 @@ export default function Nav() {
           <a href="#">
             <span>03</span>Technology
           </a>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

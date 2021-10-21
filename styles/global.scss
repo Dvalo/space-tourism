@@ -1,3 +1,11 @@
+h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+}
+
 h1, .h1 {
     font-family: $font-bellefair;
     font-size: 80px;
@@ -43,5 +51,49 @@ h4, .h4 {
 
     @include media-breakpoint-up($desktop-break-up-lg) {
         font-size: 32px;
+    }
+}
+
+h5, .h5 {
+    font-family: $font-barlow;
+    font-size: 16px;
+    letter-spacing: 4.725px;
+
+    @include media-breakpoint-up($tablet-break-up) {
+        font-size: 20px;
+    }
+
+    @include media-breakpoint-up($desktop-break-up-lg) {
+        font-size: 28px;
+    }
+}
+
+.subheading-1 {
+    font-family: $font-bellefair;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.subheading-2 {
+    font-family: $font-barlow;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav-text {
+    font-family: $font-barlow;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+
+    @include media-breakpoint-up($tablet-break-up) {
+        font-size: 14px;
+        letter-spacing: 2.3625px;
+    }
+
+    @include media-breakpoint-up($desktop-break-up-lg) {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+
     }
 }

@@ -1,10 +1,125 @@
 .sp-main {
     height: 100vh;
 }
-.sp-homepage {
+.sp-destination-page {
+    display: flex;
+    padding-top: 211px;
+    background-image: url("../public/static/images/background-destination-desktop.jpg");
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
+
+    .destination-tabs {
+        display: flex;
+    }
+    .destination-tab {
+        cursor: pointer;
+        
+        &:not(:last-child) {
+            margin-right: 32px;
+        }
+    }
+    .destination-img {
+        transition: all 0.3s ease-out;
+    }
+    .destination-info-wrapper {
+        position: relative;
+
+        .destination-info {
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.5s ease-out;
+        }
+    }
+    .destination-image-wrapper {
+        position: relative;
+
+        .destination-img {
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.5s ease-out;
+        }
+    }
+    .destination-details {
+        display: flex;
+        padding-top: 28px;
+        border-top: 1px solid #383b4b;
+
+        .destination-detail {
+            &:not(:last-child) {
+                margin-right: 80px;
+            }
+        }
+    }
+    &.active-moon {
+        .destination-moon {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &.active-mars {
+        .destination-mars {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &.active-europa {
+        .destination-europa {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &.active-titan {
+        .destination-titan {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+.sp-intro-page {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 130px;
     background-image: url("../public/static/images/background-home-desktop.jpg");
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+
+    .sp-explore {
+        width: 274px;
+        height: 274px;
+        display: block;
+        margin-left: auto;
+        background: #fff;
+        text-decoration: none;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            opacity: 0;
+            transition: all 0.3s ease-out;
+        }
+
+        h4 {
+            color: $bg-body;
+        }
+
+        &:hover {
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
 }
